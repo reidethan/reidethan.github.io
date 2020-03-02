@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Understanding Biometrics</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!-- bootstrap css file -->
+        
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid"> <!-- takes up whole screen -->
+                <a class="navbar-brand" href="#"><img src="img/abertay.png"></a> <!-- add abertay logo here-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="educate.html">Educate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="test.html">Test Yourself!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+
+
+
+            <div class="container-fluid padding">
+                <div class="row welcome text-center">
+                    <div class="col-12">
+                        <h1 class="display-4">Biometric Authentication</h1>
+                    </div>
+                    <hr>
+                    <div class="col-12">
+                        <p class="lead">
+                            Biometrics are quickly becoming commonplace in society, as technology has advanced, the ease and quickness of unlocking devices through a quick fingerprint or facial scan has meant that this has become a popular means of authentication. 
+                            </p>
+                        <p class="lead">Initially the first mobile device to publicly implement fingerprint recognition was the Motorola Atrix in 2011, however it wasn’t until 2013 when Apple released the iPhone 5S that biometrics in mobile devices became much more conventional. From here on devices began to increasingly be manufactured with fingerprint scanners, and as technology progressed, the biometrics advanced with the introduction of facial recognition. Currently it is estimated that 429 million users use biometric authentication on their devices, this is expected to increase to 1.5 billion in 2023.</p>
+                        <p class="lead">As a result of mobile devices, biometric authentication has become an everyday use for many. Either fingerprint or facial scanners are present in almost all contemporary designed mobile devices, ideally this new ubiquity of biometrics should lead to more secure devices. Also, as there is no way to simply change our inherent traits as we would with a password, the biometric data should be well protected to prevent the security of users from being compromised permanently.</p>
+                        <p class="lead">This webpage will investigate the security of biometric authentication and its implementation in mobile devices to see if users are provided more security.</p>
+                    </div>
+                </div>
+                <hr class="my-4">
+            </div>
+
+
+
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-md-12 col-lg-6">
+                        <h2> Biometric Authentication and Mobile Devices</h2>
+                        <p> Along with convenience when it comes to unlocking devices, biometric authentication methods provide strong security. However, there are limitations to the technology. Entire fingerprint scans can be hard to spoof, but due to the size of the scanner on mobile devices, only partial scans of the fingerprints are stored, meaning there is an increased likeliness that phones are susceptible to false matches. </p>
+                        <p>Apple have stated that using their iPhone’s fingerprint touchID leads to a one in 50,000 chance that someone else will falsely unlock your device whereas using FaceID (Apple's facial recognition feature) results in a one in a million chance. Both methods provide an increase in security when compared to the use of a 4-digit passcode, which has a 1 in 10,000 chance of someone successfully guessing. The use of a 6-digit code provides equal security to facial scanning with a 1 in a million chance of being unlocked. Therefore, the chances of someone falsely accessing your device through a weakness in biometrics is slim. </p>
+                        <p>It is possible for biometrics on mobile devices to be compromised if specifically targeted by an attacker. Through the use of high-resolution images, printing technologies, 3D masks or specifically designed software, researchers and hackers have been successful at spoofing the major forms of biometric authentication methods. This shows that these systems are not fully reliable, but due to the complex process involved, it is extremely unlikely that this will be a risk for the common user. </p>
+                        
+                         <br>
+                         
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/mobileDev.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+    
+    
+            <hr class="my-4">
+
+
+
+
+
+        <button class="info" data-toggle="collapse" data-target="#infoDrop">Click to here learn about the various methods of Biometrics</button>
+        <div id="infoDrop" class="collapse">
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/bioTemplate.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title"> Fingerprint</h4>
+                                <p class="card-text">Fingerprint scanners utilise the uniqueness of an individual’s fingerprint as a means of identification. Most commonly used in mobile devices, sensors are used to create a form of the user’s fingerprint which is stored and matched with any future scans. Mobile devices mainly use a capacitive sensor which identifies fingerprints through electrical changes. The ridges and valleys in fingertips result in varying electrical charges allowing for a fingerprint scan to be created.  </p>
+                                <p class="card-text">The data stored on a device for a fingerprint is not an image of the print, but rather a collection of points and their positioning that identify the differences in fingerprints.</p>
+                            
+                                <p class="card-text">Fingerprint scanners are useful as they provide quick and simple verification, however they are vulnerable to being by-passed. If an attacker can gain an image of a victims fingerprint, they can create a mould that allows for a fingerprint to be spoofed.</p>
+                                <a href="https://www.youtube.com/watch?v=_6JnKT6ybj4" class="btn btn-outline-secondary">Fingerprint Scanner Spoofed</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/facial.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title"> Face </h4>
+                                <p class="card-text"> Facial recognition examines the details of a user’s face to provide successful validation. Widely implemented in society, facial scanning is utilised in mobile devices, airports and by social media. This biometric works by first taking an image of a face then analysing various aspects such as the distance between eyes and shape of the nose, these are known as nodal points and every face has around 80. This analysis is stored as data known as a faceprint which can be checked and compared with other faceprints when attempting to find a match.  </p>
+                                <p class="card-text"> Compared to fingerprint recognition, facial scanning is a significant improvement in security. For example, using iPhone’s touchID results in statistically a one in 50,000 chance of your device being broken into whereas using FaceID, there is a one in a million chance. Facial scanners have been spoofed however, although this was by research teams and would be impractical for any hacker to attempt.  </p>
+                                <a href="https://www.youtube.com/watch?v=i4YQRLQVixM#action=share" class="btn btn-outline-secondary">FaceID spoofed</a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/retina.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title"> Retina</h4>
+                                <p class="card-text">Retina scanning records various patterns in the retina of an individual’s eye, such as blood vessels. Once scanned, these are digitally recorded as a template and stored. This form of biometric is secure as it is particularly hard for attacker to spoof. Along with this it is reliable due to the accuracy of the most scans. Downfalls to this form of biometric lie in users being falsely rejected access and the difficulty creating the intial retina scan.</p>
+                                <p class="card-text"> Retina scanning is mainly used in high security environments such as government and military facilities.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/iris.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title"> Iris</h4>
+                                <p class="card-text"> Iris scanning technology identifies unique patterns in the eye’s iris by using infrared light to interpret patterns that can’t be identified by the human eye. There around 240 aspects of the iris that will be scanned, then converted into a digital template that is stored for verification. Iris scanning is heavily utilised in US law enforcement and used with some mobile devices.</p>
+                                <p class="card-text"> The security of iris scanning technology is questionable as hackers managed to by-pass iris authentication of a Samsung Galaxy S8, this was done by simply using a printed-out image of the user in combination with a contact lens to fool the scanner on the locked device.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/voice.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title"> Voice</h4>
+                                <p class="card-text"> Voice recognition uses a recording of a user’s voice known as a voiceprint. The voiceprint is used in combination with software that identifies biological characteristics in the recording that lead to a voice sounding the way it does.  </p>
+                                <p class="card-text"> Voice recognition has been successfully implemented by banks and call centres as a way of validating a user’s identify over phone calls. This method of biometric authentication is secure due to the difficulty of faking another person’s voice, as even impressions are not sufficient to fool effective voice recognition systems.  </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/hand.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title"> Hand Vein</h4>
+                                <p class="card-text"> Everyone has a pattern of veins in their hand that is unique to themselves and doesn’t change over time, hand vein technology uses this as its way of identifying an individual. Using an infrared wave of light, the veins in the palm of a hand can be captured and stored digitally. </p>
+                                <p class="card-text"> Hand Vein technology has been used in hospitals and football stadiums, but now some manufacturers have begun implementing them in laptops as a method of user verification.</p>
+                                <p class="card-text"> Along with providing fast recognition times, Hand Vein biometrics are secure due to the nature of veins being unidentifiable to the human eye therefore leading to them being difficult to fake by an attacker.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/gait.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title"> Gait</h4>
+                                <p class="card-text"> Studies found that every individual will walk in a unique manner, despite the characteristics being small, computers are able to identify and interpret these. Gait scanning will capture and analyse the aspects of an individual’s movement. Spoofing gait scanning is difficult as the whole human body will be examined, therefore limping or dragging feet doesn’t drastically affect the chances of recognition. </p>
+                                <p class="card-text"> Although not used as a method of authentication currently, gait scanning is a developing biometric method. The main uses of this method mainly lead to ethical concerns, as the scanning is effective over long distances meaning used in combination with facial scanning it could allow for effective surveillance.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/signature.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title"> Signature</h4>
+                                <p class="card-text"> Signature recognition may get confused with traditional use of simply writing a signature. However, modern signature recognition takes into account various patterns an individual may display when writing their signature, this includes the speed, timing and the pressure applied to the surface. The signature would be signed using a special device and pen, in conjunction with a neural network which is designed to identify the slight differences between how each signature is composed.</p>
+                                <p class="card-text"> The security of this method comes from the difficulty of faking the certain patterns and tendencies of writing a signature, as they will be intrinsic to the individual. This form of biometric authentication has yet to be implemented, however there is much discussion of its beneficial potential.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/typing.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title"> Typing </h4>
+                                <p class="card-text"> An advanced and developing form of biometric authentication is typing. Technology has been developed that allows the presses and releases of keys to be analysed and stored digitally as typing patterns. These patterns will be comprised of various characteristics unique to how each individual types on their keyboard. When attempting to login in through typing, the pattern will be checked against the previous patterns of the user using artificial intelligence to ensure correct authentication. </p>
+                                <p class="card-text"> The future of this method could allow for a second form of validation, meaning that even if an attacker obtained a user’s password, they would be unable to breach the account without identical typing characteristics of the user.</p>
+                                <a href="https://www.youtube.com/watch?v=qH0AdgMEBdM" class="btn btn-outline-secondary">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+
+            
+
+
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-lg-6">
+                        <img src="img/ava.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <h2> Android vs Apple: Which is more secure? </h2>
+                        <p>The reliability of mobile devices’ biometric authentication differs depending on the manufacturer. Android devices have been quick to introduce biometrics into their devices, however when it comes to security Apple iPhones provide the most secure of the mobile devices. </p>
+                        <p>Fingerprint scanners in Apple and Android devices are comparable, but when it comes to facial recognition Apple has a clear advantage.   </p>
+                        <p> Although not fully secure, as the facial scan can sometimes be fooled by family members that look similar, Apple’s FaceID has been developed to the point of it being the most advanced and reliable option.  </p>
+                        <p>Android devices as a whole have poor facial recognition technology with some Samsung devices being fooled by a simple 2D photograph, prompting the manufacturers to say that the fingerprint scanner is a more secure option to use on their devices. </p>
+                        <br>
+                         
+                    </div>
+                    
+                </div>
+                <hr class="my-4">
+            </div>
+
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    
+                    <div class="col-md-12 col-lg-6">
+                        <h2> How is biometric data stored on mobile devices?</h2>
+                        <p> A main concern when using biometrics is that a hacker may be able to obtain a user’s biometric data such as their fingerprint or scan of their face. Biometric data is unique to every individual therefore if this was obtained by an attacker the user would be unable to replace their fingerprints with new ones and they would be permanently affected by this breach. Device manufacturers have considered this and have developed advanced solutions to ensuring that biometric data is secure. </p>
+                        <p> Both Android and Apple devices have a specific, isolated processor dedicated to being highly secure, Android’s version is named Trusted Execution Environment (TEE) and Apple’s the Secure Enclave. These areas of the device feature multiple layers of encryption meaning that they are exceptionally hard for someone to gain access to and any handling of biometric data happens exclusively in these sections. </p>
+                        <p>Operating in this method means that the data is inaccessible to anyone that does not have physical access to the device, and even then, the layers of security mean that the data is near impossible to obtain. To date, no hacker or researcher has fully breached these defences, meaning that mobile device templates are secure from attackers.</p>
+                        <br>
+                         
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/secure.jpg" class="img-fluid">
+                    </div>
+                    
+                </div>
+                <hr class="my-4">
+            </div>
+
+
+
+
+
+            <footer>
+                <div class="container-fluid padding">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <img src="img/abertay.png"> 
+                            <hr class="light">
+                            <p> 01382 308000 </p>
+                            <p> 1601974@uad.ac.uk </p>
+                            <p> Abertay University </p>
+                            <p> Dundee </p>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <hr class="light">
+                            <h5>Further Information Available:</h5>
+                            <hr class="light">
+                            <a href="https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave">Apple Secure Enclave</a>
+                            <p></p>
+                            <a href="https://www.lifewire.com/reasons-iphone-is-more-secure-than-android-2000308">Security: Apple vs Android</a>
+                            <p></p>
+                            <a href="https://www.howtogeek.com/350676/how-secure-are-face-id-and-touch-id/">How secure are FaceID and TouchID</a>
+                            <p></p>
+                            <a href="https://www.androidcentral.com/how-does-android-save-your-fingerprints">Android Biometric Storage</a>
+                            <p></p>
+
+                        </div>
+    
+                        <div class="col-md-4">
+                            <hr class="light">
+                            <h5>Further Information Available:</h5>
+                            <hr class="light">
+                            <a href="https://searchsecurity.techtarget.com/definition/biometric-authentication">What is Biometric Authentication?</a>
+                            <p></p>
+                            <a href="https://www.gemalto.com/govt/inspired/biometrics">Biometrics: 2020 Review</a>
+                            <p></p>
+                            <a href="https://insights.samsung.com/2020/02/12/which-biometric-authentication-method-is-the-most-secure-2/">Which Biometric method is the most secure?</a>
+                            <p></p>
+                            <a href="https://www.csoonline.com/article/3339565/what-is-biometrics-and-why-collecting-biometric-data-is-risky.html">Further info on Biometrics</a>
+                            
+                        </div>
+                        <div class="col-12">
+                            <hr class="light">
+                            <h5>&copy; EthanReid </h5>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> <!-- popper js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!-- boostrap.js -->
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!-- allows social media icons -->
+
+
+    </body>
+    </html>
