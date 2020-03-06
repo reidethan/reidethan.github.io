@@ -28,7 +28,7 @@ let questions = [
         answer: 4
     },
     {
-        question: "What are the statistical chances that someone will falsely unlock an iPhone’s fingerprint lock?",
+        question: "What are the chances that someone will falsely unlock an iPhone’s fingerprint lock?",
         choice1: "1 in 50,000",
         choice2: "1 in 10,000",
         choice3: "1 in 15,000",
@@ -68,7 +68,7 @@ let questions = [
         answer: 4
     },
     {
-        question: "Which of these areas has hand vein biometric technology NOT been implemented in?",
+        question: "Which of these areas has hand vein biometric technology NOT yet been implemented?",
         choice1: "Hospitals",
         choice2: "Football Stadiums",
         choice3: "Schools",
